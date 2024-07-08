@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('counterparties', function (Blueprint $table) {
             $table->id();
+            $table->string('name')->length(100);
+            $table->string('phone')->length(100);
             $table->timestamps();
         });
     }
